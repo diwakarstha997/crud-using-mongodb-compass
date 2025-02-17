@@ -6,8 +6,26 @@
 2. mongosh (MongoDb Shell)
 
 # Steps to follow
-## Creating Connection / Using exisiting Connection 
+## 1. Creating Connection / Using exisiting Connection 
 > Firstly, install the mogngoDb and mongo compass based on your system [MongoDb Installation Documentation](https://www.mongodb.com/docs/manual/administration/install-community/) & [MongoDb Compass Installation Documentation](https://www.mongodb.com/docs/compass/current/install/). 
 
-> After this launch mogodb compass, you can see Add new connection or select the existing connection you have created one to start connection
+> After this launch mogodb compass, you can see Add new connection 
 
+![Add new connection](add-new-connection.png)
+
+> OR, select the existing connection you have created one to start connection
+
+![Select existing connection](existing-connection.png)
+
+## 2. Creating a Database in Connection
+> To create a database click (+) icon on existing connection
+
+![Add new database](add-new-database.png)
+
+> Fill the database information with one collection and click create
+
+![Create-database](create-database.png)
+
+> Database has been created successfully 
+
+![Create-database](database.png)
