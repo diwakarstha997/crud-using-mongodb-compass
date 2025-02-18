@@ -5,11 +5,12 @@
 1. MongoDb Compass
 2. mongosh (MongoDb Shell)
 
-# Steps to follow
-## 1. Creating Connection / Using exisiting Connection 
-> Firstly, install the mogngoDb and mongo compass based on your system [MongoDb Installation Documentation](https://www.mongodb.com/docs/manual/administration/install-community/) & [MongoDb Compass Installation Documentation](https://www.mongodb.com/docs/compass/current/install/). 
+# Prerequisite
+Install the mogngoDb and mongo compass based on your system [MongoDb Installation Documentation](https://www.mongodb.com/docs/manual/administration/install-community/) & [MongoDb Compass Installation Documentation](https://www.mongodb.com/docs/compass/current/install/). 
 
-> After this launch mogodb compass, you can see Add new connection 
+# Steps to create database with collections using mongo compass
+## 1. Creating Connection / Using exisiting Connection 
+> Firstly, launch mogodb compass, you can see Add new connection 
 
 ![Add new connection](add-new-connection.png)
 
@@ -29,3 +30,20 @@
 > Database has been created successfully 
 
 ![Create-database](database.png)
+
+## 3. Adding collection to Database and inserting data
+> To add collection just on right side of the database, click on add icon.
+
+![Add collection](add-collection.png)
+
+> After that form appears asking the collecton name, in our case it's expense and click on create collection after filling the info
+
+![Collection form](collection-form.png)
+
+> Now lets add some data to the collection named expense for that select collection and click on add data, this gives you two option either insert document or just inport json file. Here we will be inserting document
+
+![Add data](add-data.png)
+
+> Add json data to the document, here we are inserting expense data and click insert.
+
+![Insert data](insert-data.png)
