@@ -102,4 +102,32 @@ Install the mogngoDb and mongo compass based on your system [MongoDb Installatio
 `db.user.find({name: "User One"})`
 ![user by name](user-by-name.png)
 
+4. select user with name and email
+`db.user.find({name: "User Two", email: "test2@test.com"})`
+![user by name and email](user-be-name-and-email.png)
 
+5. insert one user to user table
+`db.user.insertOne({email: "diwa@test.com", name: "Diwakar Shrestha"})`
+![insert one user](insert-one-user.png)
+
+6. insert more than one user
+`db.user.insertMany([{email: "omega@test.com", name: "omega"},{email: "alpha@test.com", name: "alpha"}])`
+![insert one or more user](insert-many-user.png)
+
+7. update one user
+`db.user.updateOne({email: "omega@test.com"},{$set: {name: "omega test"}})`
+![update one](update-one-user.png)
+
+8. update many user by setting country value for all user
+`db.user.updateMany({},{$inc: {country: "Au"}})`
+![update many](update-many-user.png)
+
+9. delete one user
+`db.user.deleteOne({email: "omega@test.com"})`
+![delete one](delete-one-user.png)
+
+10. delete many users,
+first updating 2 users `db.user.updateOne({email: "alpha@test.com"},{$set: {country: "Np"}})`
+and `db.user.updateOne({email: "diwa@test.com"},{$set: {country: "Np"}})` then deleting
+`db.user.deleteMany({country: "Np"})`
+![delete many](delete-many-user.png)
